@@ -73,7 +73,19 @@ h3 {
   line-height: 1;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+h3:after {
+  content: "";
+  height: 2px;
+  background-color: #d7534c;
+  top: 50px;
+  left: 50%;
+  width: 100px;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 h4 {
@@ -85,9 +97,12 @@ h4 {
 }
 
 blockquote {
-  font-size: 1.6em;
+  font-size: 1.4em;
+  color: #d7534c;
+  letter-spacing: 1px;
   line-height: 1.8;
   margin-top: -40px;
+  text-align: left;
 }
 
 
@@ -173,7 +188,7 @@ button, input, .reservations__make-reservation__btn {
   position: relative;
   background: url(img/pexels-photo-28883.jpg);
   background-size: cover;
-  margin: 20px auto 75px auto;
+  margin: 20px auto 100px auto;
 }
 
 .hero__content {
@@ -181,6 +196,15 @@ button, input, .reservations__make-reservation__btn {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero__arrow {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ==== RESERVATIONS ==== */
@@ -230,6 +254,7 @@ button, input, .reservations__make-reservation__btn {
 
 #reservations__table th {
   font-size: .8em;
+  color: #d7534c;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
